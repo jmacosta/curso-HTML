@@ -1,0 +1,36 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "sidebar main main"
+    "footer footer footer";
+}
+.aside {
+  display: flex;
+  background-color: antiquewhite;
+  color: red;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  grid-area: sidebar;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  background-color: aqua;
+  padding: 2rem;
+  grid-area: main;
+}
+@media screen and (max-width: 640px) {
+  body {
+    grid-template-areas:
+      "main main main"
+      "footer footer footer";
+  }
+  .aside {
+    grid-area: footer;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
