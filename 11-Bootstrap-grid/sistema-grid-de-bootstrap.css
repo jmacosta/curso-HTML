@@ -1,0 +1,24 @@
+.col {
+  background-color: red;
+  margin: 0.25rem;
+}
+
+.col-sm {
+  background-color: rgb(87, 158, 96);
+  margin: 0.25rem;
+}
+
+.col-md {
+  background-color: rgb(0, 102, 255);
+  margin: 0.25rem;
+}
+
+.col-lg {
+  background-color: rgb(225, 0, 255);
+  margin: 0.25rem;
+}
+
+.col-xl {
+  background-color: rgb(255, 251, 0);
+  margin: 0.25rem;
+}
